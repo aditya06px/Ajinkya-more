@@ -40,8 +40,6 @@ body {
     background-color: #ddd;
   }
   
-  .nav-container {
-  }
 
   .topnav {
     max-width: 1200px;
@@ -135,7 +133,7 @@ button:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   /* max-width: 1100px; */
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .card {
@@ -309,6 +307,7 @@ p {
 
 /* Style for individual testimonials */
 .testimonial {
+  margin-top: 2rem;
   background-color: #f8f8f8; /* Light background color */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
