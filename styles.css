@@ -1,0 +1,480 @@
+
+*,*:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* List styling reset */
+ul, ol {
+    list-style: none;
+}
+
+/* Reset anchor text decoration and color */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reset some default styles */
+body {
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    /* max-width: 520px; */
+    margin: auto;
+    /* background-color: #555; */
+    height: 500px;
+    border-radius: 10px;
+  }
+  
+  .navlinks {
+    background-color: #ddd;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+    
+#myLinks {
+    display: none;
+    transition: display 0.3s ease; 
+}
+
+#myLinks.show {
+    display: block;
+}
+
+  .topnav a {
+    padding: 14px 16px;
+    font-size: 17px;
+    display: block;
+    color: black;
+  }
+
+  .navlinks a {
+     margin: 1px 0;
+     border: 1px solid white;
+  }
+  
+  .topnav a.icon {
+    background-color: #ddd;
+    color: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+    
+  .navlinks a:hover {
+    background-color: #ddd;
+    color: white;
+    font-size: 20px;
+  }
+ 
+  /* hover effect for hamburger menu  not working */
+   a.icon:hover {
+    cursor: pointer;
+    background-color: green; 
+    color: white;
+}
+
+ /*  hero section */
+main{
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  margin-top: 1rem;
+  text-align: center;
+ } 
+
+ .hero-column {
+  margin-bottom: 1rem;
+ }
+
+ .btn {
+  background-color: #2270E2; 
+  color: #fff; 
+  border: none;
+  font-size: 20px;
+  padding: 17px 20px; 
+  border-radius: 20px; 
+  cursor: pointer;
+ }
+
+button:hover {
+  background-color: #05385a; 
+}
+  
+.hero-img {
+  width: 303px;
+  height: 303px;
+  margin: 0 auto;
+}
+.con{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  border: 2px red solid;
+}
+
+.card {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 20px; /* Adjust the margin between cards */
+}
+
+/* Remove the margin from the last card */
+.card:first-child {
+  margin-left: 0;
+}
+.card-image{
+  background-color: antiquewhite;
+  /* height: 150px; */
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card p{
+  padding: 10px;
+} 
+.card a{
+  background-color: black;
+  color: wheat;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.card h2{
+  text-align: center;
+}
+.card:hover{
+  background-color: azure;
+}
+
+.img-info {
+  margin-top: 5px;
+}
+
+
+/* hr line  */
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.separator::before {
+  content: "";
+  display: inline-block;
+  border-top: 2px solid #333; /* Adjust the line color and thickness as needed */
+  width: 100%;
+  margin: 0 10px; /* Adjust the spacing between text and line as needed */
+}
+
+.text {
+  display: inline-block;
+  background-color: white; /* Adjust background color as needed */
+  padding: 0 10px; /* Adjust padding as needed */
+  position: relative;
+  top: -10px; /* Adjust vertical position as needed */
+  z-index: 1; /* Ensure the text is above the line */
+}
+
+/* features */
+.features {
+  display: flex;
+  flex-direction: column; /* Mobile-first: Stack columns for smaller screens */
+  margin: 20px; /* Adjust the margin as needed */
+}
+
+.feature-column,
+.image-column {
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Adjust the margin between columns for smaller screens */
+}
+
+.image-column {
+  margin-bottom: 0; /* Remove margin for the image column */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; /* Align bullet and text vertically */
+}
+
+ul li::before {
+  content: '\2022'; /* Unicode character for a filled circle bullet */
+  color: #3498db; /* Adjust the color of the bullet */
+  display: inline-block;
+  width: 15px; /* Adjust the size of the bullet */
+  height: 15px; /* Adjust the size of the bullet */
+  margin-right: 10px; /* Adjust the spacing between the bullet and text */
+  font-size: 1.5em; /* Adjust the font size for better alignment */
+}
+
+p {
+  margin: 0; /* Remove default margin for paragraphs */
+}
+
+
+/* our team section */
+.our-team {
+  margin: 20px;
+  text-align: center;
+}
+
+.team-para {
+  margin-bottom: 1rem;
+}
+
+/* Style individual team members */
+.team-member {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin between team members for smaller screens */
+  display: flex;
+  flex-direction: column; /* Default: stack items vertically */
+}
+
+/* Internal columns for each team member */
+.info-column,
+.image-column {
+  width: 100%; /* Occupy full width by default */
+}
+
+/* Style team member information */
+.team-member h3,
+.team-member p {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+/* Style team member image */
+.team-member img {
+  max-width: 40%; /* Allow the image to take its natural size up to 100% */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* client testimonials */
+
+.client-testimonials {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.client-testimonials h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.client-testimonials p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Style for individual testimonials */
+.testimonial {
+  background-color: #f8f8f8; /* Light background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+  transform: scale(1.05); /* Slightly scale up on hover for a card-like effect */
+}
+
+.testimonial-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-info p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.client-details {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  width: 100%;
+}
+
+.client-details img {
+  max-width: 30%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.client-details p.client-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-left: 3rem;
+}
+
+  /* Media query for screens larger than 768px */
+@media screen and (min-width: 769px) {
+
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+
+    }
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border: 2px solid red;
+      background-color: white;
+    }
+  
+    .topnav #myLinks {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    .topnav a {
+      padding: 14px 16px;
+      font-size: 17px;
+      color: black;
+      display: inline-block;
+      margin: 0 10px; /* Adjust the spacing between links */
+    }
+  
+    .navlinks {
+      background-color: transparent;
+    }
+  
+    .navlinks a {
+      margin: 0;
+      border: none;
+    }
+  
+    .topnav a.icon {
+      background-color: transparent;
+      color: black;
+      display: none; /* Hide the hamburger icon for larger screens */
+    }
+
+    main {
+      flex-direction: row;
+      align-items: center;
+      border: 2px solid red;
+  }
+
+  div:first-child {
+      flex: 1; /* Make the first child (containing text) take up all available space */
+  }
+
+  div:last-child {
+      flex: 1; /* Make the second child (containing image) take up all available space */
+  }
+
+  main {
+    padding: 2rem;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+
+  main .hero-column {
+    margin-top: 2rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    margin-right: 0; /* Remove margin between cards on smaller screens */
+    margin-bottom: 20px; /* Add margin below each card for spacing */
+  }
+
+
+  /* features */
+  .features {
+    flex-direction: row; /* Adjust to a row layout for larger screens */
+  }
+
+  .feature-column,
+  .image-column {
+      flex: 1;
+      margin: 0; /* Remove margin for larger screens */
+  }
+
+  .feature-column:not(:last-child) {
+      margin-right: 20px; /* Adjust the margin between columns for larger screens */
+  }
+ 
+  .team-container {
+    display: flex;
+    gap: 20px;
+  }
+  .team-member {
+    flex-direction: row; /* Adjust to a row layout for larger screens */
+}
+
+.info-column {
+    width: 50%; /* Information column takes 50% of the width on larger screens */
+    padding: 0 20px; /* Add padding to the information column for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.image-column {
+    width: 50%; /* Image column takes 50% of the width on larger screens */
+}
+
+.team-member img {
+    max-width: 100%; /* Allow the image to take its natural size up to 100% */
+    max-height: 200px; /* Set a maximum height for the image on larger screens */
+}
+
+.client-testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+  }
+
+  
