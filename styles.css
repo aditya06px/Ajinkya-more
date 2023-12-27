@@ -40,9 +40,14 @@ body {
     background-color: #ddd;
   }
   
+  .nav-container {
+  }
+
   .topnav {
+    max-width: 1200px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
   }
   
   .topnav #myLinks {
@@ -89,7 +94,7 @@ body {
   /* hover effect for hamburger menu  not working */
    a.icon:hover {
     cursor: pointer;
-    background-color: green; 
+    background-color: #DDDDDD; 
     color: white;
 }
 
@@ -131,7 +136,6 @@ button:hover {
   flex-wrap: wrap;
   /* max-width: 1100px; */
   margin: 0 auto;
-  border: 2px red solid;
 }
 
 .card {
@@ -291,7 +295,6 @@ p {
 .client-testimonials {
   margin: 20px auto;
   text-align: center;
-  max-width: 800px;
 }
 
 .client-testimonials h2 {
@@ -311,6 +314,7 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  padding-top: 2rem;
 }
 
 .testimonial:hover {
@@ -329,17 +333,17 @@ p {
 
 .client-details {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: right;
   padding: 15px;
   width: 100%;
 }
 
 .client-details img {
-  max-width: 30%;
+  max-width: 15%;
   border-radius: 50%;
   margin-bottom: 10px;
+  margin-left: 1rem;
 }
 
 .client-details p.client-name {
@@ -347,6 +351,33 @@ p {
   font-size: 1.1em;
   margin-left: 3rem;
 }
+
+footer {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px 30px;
+  text-align: center;
+  font-family: sans-serif;
+  color: #333;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
 
   /* Media query for screens larger than 768px */
 @media screen and (min-width: 769px) {
@@ -363,7 +394,6 @@ p {
       position: sticky;
       top: 0;
       z-index: 100;
-      border: 2px solid red;
       background-color: white;
     }
   
@@ -399,7 +429,6 @@ p {
     main {
       flex-direction: row;
       align-items: center;
-      border: 2px solid red;
   }
 
   div:first-child {
@@ -473,7 +502,13 @@ p {
 .client-testimonials {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 40px;
+}
+
+.client-review {
+  display: flex;
+    flex-direction: column;
+    align-items: end;
 }
   }
 
